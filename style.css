@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  /* background: #0984e3; */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  
+}
+header {
+  font-size: 2rem;
+  text-align: center;
+}
+header,
+form {
+  min-height: 20vh;
+}
+header,
+form,
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-input,
+.todo-submit {
+  height: 3rem;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.3rem;
+  background: white;
+}
+.todo-submit {
+  width: 3rem;
+  color: #0984e3;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.todo-submit:hover {
+  color: white;
+  background: #075fa1;
+}
+.todo {
+  height: 2.5rem;
+  min-width: 500px;
+  padding: 0 0 0 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  color: black;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+.todo li {
+  flex: 1;
+}
+.itemCheckStyle,
+.itemDeleteStyle {
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  cursor: pointer;
+}
+.itemCheckStyle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #1abc9c;
+  transition: all 0.3s ease-in-out;
+}
+.itemCheckStyle:hover {
+  background: #17a78a;
+}
+.itemDeleteStyle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #e74c3c;
+  transition: all 0.3s ease-in-out;
+}
+.itemDeleteStyle:hover {
+  background: #ca4334;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.todoChecked {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.todoDelete {
+  transform: translateX(30px);
+  opacity: 0;
+}
